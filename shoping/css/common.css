@@ -1,0 +1,366 @@
+/* 字体路径是相对于css文件的地址，所以要在'和fonts之间加../才行 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?f4jzh8');
+    src: url('../fonts/icomoon.eot?f4jzh8#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?f4jzh8') format('truetype'),
+        url('../fonts/icomoon.woff?f4jzh8') format('woff'),
+        url('../fonts/icomoon.svg?f4jzh8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/* 版心 */
+.w {
+    margin: 0 auto;
+    width: 1200px;
+}
+/* 快捷导航模块 */
+.shortcut {
+    width: 100%;
+    height: 31px;
+    background-color: #f1f1f1;
+    /* 垂直居中可以继承，.shortsut里面的文字都会垂直居中 */
+    line-height: 31px;
+}
+/* 只要是左侧浮动的盒子，都可以调用这个类名 */
+.fl {
+    float: left;
+}
+/* 第一个小li */
+.shortcut .w .fl ul li:first-child {
+    margin-right: 14px;
+    color: #666666;
+    font-size: 12px;
+}
+/* 最后一个小li */
+.shortcut .w .fl ul li:last-child {
+    color: #666666;
+    font-size: 12px;
+}
+/* 最后一个小li里面的a */
+.shortcut .w .fl ul li:last-child a {
+    margin-left: 13px;
+    font-size: 12px;
+}
+/* 红色字体都可以调用这个类名 */
+.style_red {
+    color: #c81623;
+}
+/* .shortcut里面的小li都是要浮动的 */
+.shortcut .w ul li {
+    float: left;
+}
+/* 只要是右侧浮动的盒子，都可以调用这个类名 */
+.fr {
+    float: right;
+}
+/* 字体声明 */
+.shortcut .w ul {
+    font-family: 'icomoon';
+}
+/* 让偶数的小li充当竖线 */
+.shortcut .w .fr ul li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+    margin: 9px 14px 0px;
+    background-color: #666;
+}
+/* 给需要字体图标的小li添加伪元素 */
+.arrow-icon::after {
+    content: "";
+}
+
+/* 快捷导航模块结束 */
+
+/* 头部开始 */
+.header {
+    height: 105px;
+    position: relative;
+}
+/* logo盒子 */
+.header .logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+/* logo里面放上首页链接 */
+.header .logo h1 a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    /* font-size: 0px;京东的做法 */
+    /* 淘宝的做法 */
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/logo.png) no-repeat;
+}
+/* 搜索整体盒子，给其一个边框，就相当于给整体个边框，里面的input和button就不用给边框了 */
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+}
+/* 搜索框 */
+.search input {
+    float: left;
+    width: 454px;
+    height: 100%;
+    padding-left: 10px;
+    border: 2px solid #b1191a;
+}
+/* 搜索按钮 */
+.search button {
+    float: left;
+    height: 100%;
+    width: 80px;
+    background-color: #b1191a;
+    color: #fff;
+    font-size: 16px;
+}
+/* 热点词模块 */
+.header .hotwrods {
+    position: absolute;
+    top: 63px;
+    left: 347px;
+    width: 538px;
+    height: 28px;
+    line-height: 28px;
+}
+/* 让小li在一行显示 */
+.header .hotwrods ul li {
+    float: left;
+    margin: 0px 10px;
+}
+/* 购物车大盒子 */
+.header .shopcar {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background:  #f7f7f7;
+    line-height: 35px;
+    text-align: center;
+}
+/* 用伪元素添加购物车字体图标 */
+.header .shopcar::before {
+    content: "\e93a";
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: #b1191a;
+}
+/* 用伪元素添加字体图标> */
+.header .shopcar::after {
+    content: "";
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+/* 数量模块 */
+.header .shopcar .count {
+    position: absolute;
+    left: 105px;
+    top: -4px;
+    padding: 0 5px;
+    color: #fff;
+    line-height: 14px;
+    height: 14px;
+    border-radius: 7px 7px 7px 0;
+    background-color: #e60012;
+}
+/* 头部结束 */
+
+/* 导航模块开始 */
+/* 通栏大盒子 */
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+    line-height: 45px;
+}
+.nav .w .dropdown {
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+/* 左侧商品分类模块-头部全部商品分类*/
+.nav .w .dropdown .dt{
+    width: 210px;
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+/* 下部商品详细分类 */
+.nav .w .dropdown .dd {
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+/* 详细分类li的颜色、a链接里面的颜色*/
+.nav .w .dropdown .dd li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    color: #fff;
+    border-left: 1px solid #c81623;
+    padding-left: 12px;
+}
+.nav .w .dropdown .dd li a{
+    color: #fff;
+}
+/* 鼠标经过时li的底色变成白色，li里面的“、”变成红色 */
+.nav .w .dropdown .dd li:hover {
+    background-color: #fff;
+    color: #c81623;
+}
+/* 鼠标经过时a链接里面的文字变成红色 */
+.nav .w .dropdown .dd li:hover a {
+    color: #c81623;
+}
+/* 插入>字体图标伪元素 */
+.nav .w .dropdown .dd li::after {
+    position: absolute;
+    top: 2px;
+    right: 11px;
+    content: "";
+    font-family: 'icomoon';
+    font-size: 12px;
+}
+/* 右侧大盒子高度宽度 */
+.nav .w .navitems {
+    height: 45px;
+    width: 990px;
+}
+/* 小li浮动 */
+.nav .w .navitems ul li {
+    float: left;
+}
+/* 使a链接增加触发范围 */
+.nav .w .navitems ul li a {
+    display: block;
+    height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+/* 导航模块结束 */
+
+/* 底部模块开始 */
+.footer {
+    background-color: #f5f5f5;
+    height: 415px;
+    padding-top: 30px;
+}
+.footer .mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+.footer .w .mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+}
+/* 图片浮动，文字就会产生环绕效果 */
+.footer .w .mod_service ul li h5 {
+    float: left;
+    margin-right: 8px;
+    width: 50px;
+    height: 50px;
+}
+/* 正品保障文字 */
+.footer .w .mod_service ul li .search_txt h4 {
+    font-size: 14px;
+}
+/* 下面的文字 */
+.footer .w .mod_service ul li .search_txt p {
+    font-size: 12px;
+}
+/* 插入精灵图 */
+.footer .w .mod_service ul li:nth-child(1) h5 {
+    background-image: url(../images/icons.png);
+    background-position: -253px -3px;
+}
+.footer .w .mod_service ul li:nth-child(2) h5 {
+    background-image: url(../images/icons.png);
+    background-position: -254px -54px;
+}
+.footer .w .mod_service ul li:nth-child(3) h5 {
+    background-image: url(../images/icons.png);
+    background-position: -256px -106px;
+}
+.footer .w .mod_service ul li:nth-child(4) h5 {
+    background-image: url(../images/icons.png);
+    background-position: -257px -157px;
+}
+.footer .w .mod_service ul li:nth-child(5) h5 {
+    background-image: url(../images/icons.png);
+    background-position: -256px -209px;
+}
+/* 帮助模块 */
+.footer .w .mod_help {
+    height: 188px;
+    padding-left: 50px;
+    padding-top: 22px;
+    border-bottom: 1px solid #ccc;
+}
+/* dl盒子浮动在一行显示 */
+.footer .w .mod_help dl {
+    float: left;
+    width: 200px;
+}
+/* 最后一个dl宽度 */
+.footer .w .mod_help dl:last-child {
+    width: 96px;
+    text-align: center;
+}
+/* dt文字大小 */
+.footer .w .mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+/* dl文字大小 */
+.footer .w .mod_help dl dd {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+/* 版权开始 */
+.footer .w .mod_copyright {
+    text-align: center;
+}
+/* ul大盒子 */
+.footer .w .mod_copyright ul {
+    padding-left: 117px;
+    height: 30px;
+    margin-top: 20px;
+}
+/* 小li盒子 */
+.footer .w .mod_copyright ul li{
+    height: 12px;
+    line-height: 12px;
+    float: left;
+    padding: 0px 15px;
+    border-left: 1px solid #999;
+}
+/* 第一个小li没有左边框 */
+.footer .w .mod_copyright ul li:first-child{
+    border-left: 0px;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

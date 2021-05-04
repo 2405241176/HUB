@@ -1,0 +1,141 @@
+/* 注册页面都是在版心当中的 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 头部logo */
+header {
+    height: 84px;
+    border-bottom: 2px solid #b1191a;
+    line-height: 84px;
+}
+/* 中间内容大盒子 */
+.registerarea {
+    height: 522px;
+    border: 1px solid #dfdfdf;
+    margin-top: 20px;
+}
+/* 内容头部 */
+.registerarea .registerarea_hd {
+    height: 41px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #ececec;
+    line-height: 41px;
+    padding: 0px 10px 0 10px;
+}
+/* 头部左边 */
+.registerarea .registerarea_hd span {
+    float: left;
+    font-size: 18px;
+}
+/* 头部右边 */
+.registerarea .registerarea_hd i {
+    float: right;
+    font-size: 14px;
+}
+/* 登陆按钮 */
+.registerarea .registerarea_hd a {
+    color: red;
+}
+.registerarea .reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.registerarea .reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.registerarea .reg_form ul li {
+    margin-bottom: 20px;
+}
+.registerarea .reg_form ul li:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+.registerarea .reg_form ul li:nth-child(4) {
+    margin: 10px 270px 20px 0;
+    text-align: right;
+    color: #b2b2b2;
+}
+.registerarea .reg_form ul li:nth-child(4) em {
+    display: inline-block;
+    color: #fff;
+    width: 34px;
+    height: 13px;
+    text-align: center;
+    line-height: 13px;
+    margin-right: 1px;
+}
+.registerarea .reg_form ul li:nth-child(4) em:first-child {
+    background-color: red;
+}
+.registerarea .reg_form ul li:nth-child(4) em:nth-child(2) {
+    background-color: green;
+}
+.registerarea .reg_form ul li:nth-child(4) em:nth-child(3) {
+    background-color: yellow;
+}
+
+.registerarea .reg_form ul li .big {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.registerarea .reg_form ul li .error {
+    color: red;
+}
+.registerarea .reg_form ul li .success {
+    color: green;
+}
+
+.error_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../upload/error_icon.png);
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.registerarea .reg_form ul li:nth-child(6) {
+    padding-left: 90px;
+}
+.registerarea .reg_form ul li:nth-child(6) input {
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+.registerarea .reg_form ul li:nth-child(6) a {
+    color: #1ba1e6;
+}
+.registerarea .reg_form ul li:nth-child(7) button {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 105px;
+    margin-top: 30px;
+}
+footer .mod_copyright {
+    text-align: center;
+}
+/* ul大盒子 */
+footer .mod_copyright ul {
+    padding-left: 117px;
+    height: 30px;
+    margin-top: 20px;
+}
+/* 小li盒子 */
+footer .mod_copyright ul li{
+    height: 12px;
+    line-height: 12px;
+    float: left;
+    padding: 0px 15px;
+    border-left: 1px solid #999;
+}
+/* 第一个小li没有左边框 */
+footer .mod_copyright ul li:first-child{
+    border-left: 0px;
+    padding-left: 0px;
+}

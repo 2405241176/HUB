@@ -1,0 +1,267 @@
+/* main大盒子 */
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+/* 焦点图 */
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+/* 焦点图右侧大盒子 */
+.main .newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+/* 新闻模块 */
+.main .newflash .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+/* 新闻上部 */
+.main .newflash .news .news-hd {
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding-left: 16px;
+}
+/* 插入字体图标 */
+.main .newflash .news .news-hd a {
+    float: right;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'icomoon';
+    content: "";
+}
+/* 新闻下部 */
+.main .newflash .news .news-bd {
+    line-height: 25px;
+    padding-left: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 加粗 */
+.main .newflash .news .news-bd i {
+    font-weight: 700;
+}
+/* 网格模块 */
+.main .newflash .lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+/* 让小li能一行放四个 */
+.main .newflash .lifeservice ul {
+    width: 252px;
+}
+/* 给小li右下边框 */
+.main .newflash .lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+/* 精灵图 */
+.main .newflash .lifeservice ul li i {
+    display: inline-block;
+    margin-top: 15px;
+    width: 21px;
+    height: 26px;
+    background-image: url(../images/icons.png);
+    background-position: -17px -14px;
+}
+/* 特价图片模块 */
+.main .newflash .bargain {
+    margin-top: 5px;
+}
+/* 今日推荐模块开始 */
+.recom {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+/* 头部图标 */
+.recom .recom_hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+/* 右侧盒子浮动 */
+.recom .recom_bd {
+    float: left;
+}
+/* 里面的小li浮动 */
+.recom .recom_bd ul li {
+    float: left;
+    position: relative;
+}
+/* 给图片的宽高写死，防止换图片导致布局出错 */
+.recom .recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+/* 前三个图片添加伪元素竖线 */
+.recom .recom_bd ul li:nth-child(-n+3)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+/* 猜你喜欢开始 */
+.hobby .hobby_hd {
+    height: 59px;
+    padding-top: 30px;
+    padding-right: 21px;
+}
+/* 猜你喜欢字体大小 */
+.hobby .hobby_hd .fl {
+    font-size: 18px;
+}
+/* 图片位置 */
+.hobby .hobby_hd .fr img {
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+/* 猜你喜欢下边大盒子 */
+.hobby .hobby_bd {
+    height: 233px;
+    border: 1px solid #ededed;
+}
+/* 给小li个宽度和相对定位 */
+.hobby .hobby_bd li {
+    float: left;
+    height: 100%;
+    width: 199px;
+    text-align: center;
+    position: relative;
+}
+/* 字体 */
+.hobby .hobby_bd li h5 {
+    font-size: 18px;
+    color: #df3033;
+}
+/* 伪元素添加竖线 */
+.hobby .hobby_bd li:nth-child(-n+5)::after {
+    content: "";
+    height: 62px;
+    width: 1px;
+    background-color: #ededed;
+    position: absolute;
+    right: 0;
+    top: 145px;
+}
+/* 家用电器模块开始 */
+.floor .w .box_hd {
+    height: 56px;
+    padding-top: 29px;
+    border-bottom: 2px solid #c81623;
+}
+/* 猜你喜欢文字样式 */
+.floor .w .box_hd p {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+/* 猜你喜欢右侧大盒子 */
+.floor .w .box_hd .tab_list {
+    float: right;
+}
+/* 里面的小li */
+.floor .w .box_hd .tab_list li {
+    float: left;
+    padding: 0 17px;
+    position: relative;
+}
+/* 伪元素添加竖线 */
+.floor .w .box_hd .tab_list li:nth-child(-n+8)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #ededed;
+    top: 5px;
+    right: 0;
+}
+/* 家用电器内容模块 */
+.floor .w .box_bd {
+    height: 361px;
+}
+/* 内容分5个区 */
+.tab_list_item>div {
+    float: left;
+    height: 360px;
+}
+/* 第一个区的宽高 */
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+/* 第一个区的头部 */
+.col_210 ul li {
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 33px;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+}
+/* 边距 */
+.col_210 ul a {
+    padding-left: 12px;
+}
+/* 第一个区的内容 */
+.col_210 img {
+    margin-top: 10px;
+}
+/* 第二个区的内容 */
+.col_329 {
+    width: 329px;
+}
+/* 第三个区的内容 */
+.col_221_01 {
+    width: 221px;
+}
+/* 外边框 */
+.col_221_01 img {
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+/* 外边框 */
+.col_221_02 {
+    width: 221px;
+    height: 359px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+/* 外边框 */
+.col_219 {
+    width: 219px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+/* 链接在包含有宽度的盒子时最好转换成块级元素 */
+.col_219 a {
+    display: block;
+    width: 100%;   
+}
+/* 图片大小 */
+.col_219 a>img {
+    width: 100%;
+}

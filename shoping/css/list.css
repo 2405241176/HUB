@@ -1,0 +1,148 @@
+/* 列表页专有CSS */
+.nav {
+    overflow: hidden;
+}
+.header .sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    width: 83px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border-left: 1px solid #b1191a;
+}
+/* 秒杀导航栏左侧 */
+.sk_list {
+    float: left;
+}
+/* 浮动 */
+.sk_list ul li {
+    float: left;
+}
+/* 样式 */
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+/* 秒杀导航栏右侧 */
+.sk_con {
+    float: left;
+}
+/* 浮动 */
+.sk_con ul li {
+    float: left;
+}
+/* 样式 */
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+/* 伪元素加字体图标 */
+.sk_con ul li:last-child a::after {
+    content: '';
+    font-family: "icomoon";
+}
+/* 小li浮动，给个透明边框 */
+.container .sk_bd ul li {
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+}
+/* 鼠标经过时边框变成红色 */
+.container .sk_bd ul li:hover {
+    border: 1px solid red;
+}
+/* 第四个小li没有右边距 */
+.container .sk_bd ul li:nth-child(4n) {
+    margin: 0;
+}
+/* 图片大小写死 */
+.container .sk_bd ul li img {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+/* 文字 */
+.container .sk_bd ul li>p {
+    font-size: 14px;
+    margin: 0 12px;
+    color: #666666;
+}
+/* 钱大盒子 */
+.container .sk_bd ul li .qian {
+    width: 120px;
+    margin: 5px 0px 0px 12px;
+}
+/* 现价 */
+.container .sk_bd ul li .qian i {
+    font-size: 22px;
+    color: #e60012;
+    font-weight: 700;
+}
+/* 原价 */
+.container .sk_bd ul li .qian del {
+    font-size: 14px;
+    color: #a4a4a4;
+}
+/* 已售进度条大盒子 */
+.container .sk_bd ul li .yishou {
+    width: 260px;
+    height: 15px;
+    background-color: #fff;
+    margin: 2px 0px 11px 12px;
+    overflow: hidden;
+}
+/* 已售 */
+.container .sk_bd ul li .yishou i {
+    float: left;
+    font-size: 12px;
+    color: #666;
+}
+/* 剩余 */
+.container .sk_bd ul li .yishou span {
+    float: left;
+    font-size: 12px;
+    color: #666;
+}
+/* 进度条 */
+.container .sk_bd ul li .yishou div {
+    float: left;
+    width: 132px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid red;
+    margin: 0 14px;
+}
+/* 伪元素红色 */
+.container .sk_bd ul li .yishou div::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 100%;
+    background-color: red;
+    transition: 0.5s;
+}
+/* 鼠标经过时过度 */
+.container .sk_bd ul li .yishou div:hover::before {
+    width: 100%;
+}
+/* 底部立即抢购 */
+.container .sk_bd ul li .qianggou a {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+}
